@@ -40,5 +40,7 @@ For large stacks (~500), I search for the cheapest node in stack_a that is ranke
 I also have another algorithm for sorting medium stacks that can be used by calling alt_sort() in main instead of sort(). that one will push the median node over to stack_b first and then starting with nodes that are ranked closer to and working outwards it will find the cheapest node and push it to stack_b, if the node is ranked lower than the median node it will rotate stack b so that stack_b will be partially sorted with lower ranked nodes beneath the median node and higher ranked nodes above it. I then use the same logic as the large stack algorithm to push the cheapest node back to the correct position in stack_a. I thought that this algorithm would be more efficient than my other medium stack algorithm but it seems to be about the same. Both mostly use less than 700 operations which is needed for full marks but they will both also occasionally return >700.
 
 
+test commands can be found in test_commands.txt which uses the checker_OS supplied by 42.
+
 A good visualiser for the sorting can be found here:
 https://github.com/elijahkash/push_swap_gui
